@@ -16,25 +16,34 @@
   <span id="colmar">colmar</span><span id="academy">academy</span>
 </div> <!-- Closing logo div -->
 
-<nav>
+<nav class="desktop-nav">
   <a href="#">On campus</a>
   <a href="#">Online</a>
   <a href="#">For companies</a>
   <a href="#">Sign in</a>
 </nav>
+
+
+  <nav class="mobile-nav">
+    <a href="#"><img src="resources/images/ic-logo.svg"></a>
+    <a href="#"><img src="resources/images/ic-on-campus.svg"></a>
+    <a href="#"><img src="resources/images/ic-online.svg"></a>
+    <a href="#"><img src="resources/images/ic-login.svg"></a>
+  </nav>
 </header>
+
 
 <!-- End of Header -->
 
 <!-- Section 1 -->
-<section class="banner-section gray">
+<section class="banner-section color" id="bannerone">
   <div class="left">
     <div class="image-container">
       <img src="resources/images/banner.jpg">
     </div> <!-- closing image container div -->
   </div> <!-- Closing left div -->
 <div class="right">
-  <div class="text-container">
+  <div class="text-container-right">
             <h1 class="bold">Learn something new everyday</h1>
             <h3 class="bold">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
             <div id="button"><a>Start here</a></div>
@@ -50,16 +59,19 @@
            <div class="image-container">
              <img src="resources/images/information-main.jpg">
            </div> <!-- closing image container div -->
-           <h1>It doesn't hurt to keep practicing</h1>
-           <p>"thgegfef nfownef owenfq onfqoiefn weoifn woekfnw efinweof iwenfwo ei fnwoi."</p>
+           <div class="text-container-left">
+          <h1>It doesn't hurt to keep practicing</h1>
+           <p>"Sapidit veliquoditem quo quo tem alis sundion sequisq uaeperum quia vent moloren tiaerrum quas alitat vidita et."</p>
            <p id="quote">Author name quote</p>
+           </div> <!-- closing text container div -->
 
          </div> <!-- Closing left div -->
 
 
 <div class="right">
 <div class="feature">
-    <img src="resources/images/information-orientation.jpg">
+    <img class="square" src="resources/images/information-orientation.jpg">
+    <img class="wide" src="resources/images/information-orientation-mobile.jpg">
     <div class="info">
       <h3>Orientation date</h3>
       <p>Tues 10/11 &#38; Wed 10/12 8am-3pm</p>
@@ -68,7 +80,8 @@
   </div> <!-- closing feature div -->
 
   <div class="feature">
-  <img src="resources/images/information-campus.jpg">
+  <img class="square" src="resources/images/information-campus.jpg">
+  <img class="wide" src="resources/images/information-campus-mobile.jpg">
   <div class="info">
     <h3>Our campus</h3>
     <p>Find which campus is close by you.</p>
@@ -77,7 +90,8 @@
   </div> <!-- closing feature div -->
 
   <div class="feature">
-  <img src="resources/images/information-guest-lecture.jpg">
+  <img class="square" src="resources/images/information-guest-lecture.jpg">
+  <img class="wide" src="resources/images/information-guest-lecture-mobile.jpg">
   <div class="info">
     <h3>Special guest lecture</h3>
     <p>Join a keynote with Oliver Sacks about music in medical treatment.</p>
@@ -91,8 +105,8 @@
   <!-- Section 3 -->
 
   <h1 id="start-title">Start learning</h1>
-  <section class="banner-section gray">
-  <div id="courses">
+  <section class="banner-section color">
+  <div id="desktop-courses">
     <div class="course">
     <img src="resources/images/course-software.jpg">
       <div class="course-text">
@@ -146,8 +160,29 @@
         <p>Analytics, Content Marketing, Mobile Marketing</p>
       </div> <!-- Closing course 6 text div -->
     </div> <!-- Closing course 6 div -->
+  </div> <!-- Closing desktop courses div -->
 
-  </div> <!-- Closing courses div -->
+  <div id="mobile-courses">
+    <div class="course">
+      <h3>Software engineering</h3>
+    </div> <!-- Closing course 1 div -->
+    <div class="course">
+      <h3>Computer art</h3>
+    </div> <!-- Closing course 2 div -->
+    <div class="course">
+      <h3>Design</h3>
+    </div> <!-- Closing course 3 div -->
+    <div class="course">
+      <h3>Data</h3>
+    </div> <!-- Closing course 4 div -->
+    <div class="course">
+      <h3>Business</h3>
+    </div> <!-- Closing course 5 div -->
+    <div class="course">
+      <h3>Marketing</h3>
+    </div> <!-- Closing course 6 div -->
+  </div> <!-- Closing mobile courses div -->
+
 </section>
 
 
@@ -157,12 +192,14 @@
 <section class="banner-section">
   <div class="left">
       <video src="resources/videos/thesis.mp4" controls>Video not supported</video>
-      <h3>Reimagine urban</h3>
-      <p>"sf hweoifw efhiwef wef ieufb wiufhb weifw ofibwif afia uhfif nwcq ncqio nciqn ie io."</p>
-  </div> <!-- Closing left div -->
+      <div class="desktop-quote">
+        <h3>Reimagine urban</h3>
+      <p>"Sapidit veliquoditem quo quo tem alis sundion sequisq uaeperum quia vent moloren tiaerrum quas alitat vidita et dolores enimeni hitisti umquate pa sitis sunt expernam."</p>
+  </div> <!-- Closing desktop quote div -->
+</div> <!-- Closing left div -->
 
   <div class="right">
-  <div class="feature">
+  <div class="feature desktop-thesis">
       <img src="resources/images/thesis-fisma.jpg">
       <div class="info">
         <h3>Fisma: Design and Prototype</h3>
@@ -171,7 +208,7 @@
     </div> <!-- closing feature div -->
 
 
-    <div class="feature">
+    <div class="feature desktop-thesis">
         <img src="resources/images/thesis-now-and-then.jpg">
         <div class="info">
           <h3>Now and then</h3>
@@ -186,8 +223,8 @@
   <p>&#169; 2016 Colmar Academy. All rights reserved.</p>
 </div>
   <div class"footer-links">
-    <a>Terms</a>
-    <a>Privacy</a>
+    <a href="#">Terms</a>
+    <a href="#">Privacy</a>
   </div>
 </footer>
 
